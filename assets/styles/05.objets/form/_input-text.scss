@@ -1,0 +1,25 @@
+$o-input-text: '.o-input-text';
+
+#{$o-input-text} {
+    @extend %input-text;
+    @extend %input-placeholder;
+
+    &--is-disabled,
+    &:disabled {
+        @extend %input-disabled;
+    }
+
+    &--is-focus,
+    &:focus {
+        @extend %input-focus;
+    }
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+/* ==========================================================================
+#html
+========================================================================== */
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    // font-variant-ligatures: none;
+    // text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* ==========================================================================
+#body
+========================================================================== */
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: $colors-black;
+    font-size: $fontSize-8;
+    font-family: $roboto;
+    line-height: $lineHeight-none;
+    background-color: $colors-white;
+}
+
+/* ==========================================================================
+#selection
+========================================================================== */
+
+::-moz-selection,
+::selection {
+    color: $text-selection-color;
+    text-shadow: none;
+    background-color: $text-selection-bg; /* Required when declaring ::selection */
+}

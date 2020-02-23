@@ -1,0 +1,22 @@
+/* ==========================================================================
+#lazy (lazyload)
+========================================================================== */
+$o-lazy: '.o-lazy';
+
+#{$o-lazy} {
+    opacity: 0;
+
+    &:not(.initial) {
+        transition: opacity 1s;
+    }
+
+    &.initial,
+    &.loaded,
+    &.error {
+        opacity: 1;
+    }
+
+    &:not([src]) {
+        visibility: hidden;
+    }
+}

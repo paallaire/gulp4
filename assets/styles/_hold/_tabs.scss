@@ -1,0 +1,33 @@
+$c-tabs: '.c-tabs';
+
+#{$c-tabs} {
+
+    &__header {
+        display: flex;
+
+        a {
+            padding: 10px;
+
+            &.is-active {
+                font-weight: 700;;
+            }
+
+
+        }
+
+
+    }
+
+    &__content {
+        padding: 10px;
+        display: none;
+        border: 1px solid $colors-black;
+
+        &.is-active {
+            display: block;
+        }
+
+    }
+
+}
+

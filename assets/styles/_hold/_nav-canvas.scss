@@ -1,0 +1,80 @@
+$c-nav-canvas: '.c-nav-canvas';
+
+#{$c-nav-canvas} {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $colors-white;
+    background-color: $colors-blue-1;
+    transform: translate3d(-100%, 0, 0);
+    transition: all 500ms ease;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+
+    h1 {
+        transform: translate3d(0, 20px, 0);
+        opacity: 0;
+        transition: all 500ms ease;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    nav {
+        margin-top: 40px;
+
+        li {
+            margin-bottom: 10px;
+            transform: translate3d(0, 80px, 0);
+            opacity: 0;
+            transition: all 500ms ease;
+            transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+
+
+    }
+
+}
+
+body.c-nav-canvas--is-active {
+    $base-delay: 250ms;
+
+    #{$c-nav-canvas} {
+        transform: translate3d(0, 0, 0);
+    }
+
+
+    h1 {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transition-delay: $base-delay;
+    }
+
+    nav {
+
+        li {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+
+            @for $i from 1 through 10 {
+
+                &:nth-child(#{$i}) {
+                    transition-delay: $base-delay + ($i * 50ms);
+                }
+            }
+
+        }
+
+
+    }
+
+}
+
+#nav-canvas-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+

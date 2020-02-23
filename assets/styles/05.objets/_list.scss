@@ -1,0 +1,35 @@
+/* ==========================================================================
+#unordered-list
+========================================================================== */
+$o-unordered-list: '.o-unordered-list';
+
+// placeholder
+
+%o-unordered-list {
+    padding-left: 1em;
+    list-style: disc;
+}
+
+// class
+
+#{$o-unordered-list} {
+    @extend %o-unordered-list;
+}
+
+/* ==========================================================================
+#ordered-list
+========================================================================== */
+$o-ordered-list: '.o-ordered-lis';
+
+// placeholder
+
+%o-ordered-list {
+    padding-left: 1em;
+    list-style-type: decimal;
+}
+
+// class
+
+#{$o-ordered-list} {
+    @extend %o-ordered-list;
+}

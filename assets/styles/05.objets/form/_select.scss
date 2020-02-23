@@ -1,0 +1,46 @@
+$o-select: '.o-select';
+
+#{$o-select} {
+    @extend %input-select;
+    padding: 0;
+    padding-right: 40px;
+    position: relative;
+    border: 1px solid $colors-black;
+    
+    &:after {
+        content: '';
+        width: $form-input-select-size-icon;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6H7z"/></svg>');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 16px;
+        pointer-events: none;
+    }
+
+    &--is-disabled,
+    &:disabled {
+        @extend %input-disabled;
+    }
+
+    select {
+        padding: $form-input-padding;
+        display: block;
+        width: 100%;
+    }
+
+    &--is-focus,
+    &:focus {
+        @extend %input-focus;
+    }
+
+}
+
+
+
+
+

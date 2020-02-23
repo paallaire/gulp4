@@ -1,0 +1,6 @@
+@mixin anim($transProperty, $transDuration: 0.25s, $transDelay: 0s) {
+    transition: #{$transProperty};
+    transition-delay: #{$transDelay};
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    transition-duration: #{$transDuration};
+}

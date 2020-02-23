@@ -1,0 +1,74 @@
+/* ==========================================================================
+#heading
+========================================================================== */
+$o-heading: '.o-heading';
+
+// placeholder
+
+%heading-base {
+    color: $colors-black;
+    font-weight: 300;
+    line-height: $lineHeight-tight;
+    text-transform: uppercase;
+}
+
+%heading-1 {
+    @extend %heading-base;
+    font-size: $fontSize-30;
+}
+
+%heading-2 {
+    @extend %heading-base;
+    font-size: $fontSize-24;
+}
+
+%heading-3 {
+    @extend %heading-base;
+    font-size: $fontSize-20;
+}
+
+%heading-4 {
+    @extend %heading-base;
+    font-size: $fontSize-18;
+}
+
+%heading-5 {
+    @extend %heading-base;
+    font-size: $fontSize-12;
+}
+
+%heading-5 {
+    @extend %heading-base;
+    font-size: $fontSize-12;
+}
+
+%heading-6 {
+    @extend %heading-base;
+    font-size: $fontSize-10;
+}
+
+// class
+
+#{$o-heading}-1 {
+    @extend %heading-1;
+}
+
+#{$o-heading}-2 {
+    @extend %heading-2;
+}
+
+#{$o-heading}-3 {
+    @extend %heading-3;
+}
+
+#{$o-heading}-4 {
+    @extend %heading-4;
+}
+
+#{$o-heading}-5 {
+    @extend %heading-5;
+}
+
+#{$o-heading}-6 {
+    @extend %heading-6;
+}

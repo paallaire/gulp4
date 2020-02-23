@@ -1,0 +1,28 @@
+/* ==========================================================================
+#loading-circle
+========================================================================== */
+$o-loading-circle: '.o-loading-circle';
+
+#{$o-loading-circle} {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: {
+        top: 4px solid $colors-green-1;
+        bottom: 2px solid transparent;
+        left: 2px solid transparent;
+        right: 2px solid transparent;
+        radius: 50%;
+    }
+    animation: loading-circle 750ms infinite linear;
+}
+
+@keyframes loading-circle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

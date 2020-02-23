@@ -1,0 +1,34 @@
+/* ==========================================================================
+#container
+========================================================================== */
+$o-container: '.o-container';
+
+#{$o-container}-large {
+    @extend %container;
+    @include center();
+    max-width: $maxWidth-large;
+}
+
+#{$o-container}-xlarge {
+    @extend %container;
+    @include center();
+    max-width: $maxWidth-xlarge;
+}
+
+#{$o-container}-wide {
+    @extend %container;
+    @include center();
+    max-width: $maxWidth-wide;
+}
+
+#{$o-container}-site {
+    @extend %container;
+    @include center();
+    max-width: $maxWidth-site;
+}
+
+#{$o-container}-xsite {
+    @extend %container;
+    @include center();
+    max-width: $maxWidth-xsite;
+}

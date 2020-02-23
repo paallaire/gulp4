@@ -1,0 +1,16 @@
+/* ==========================================================================
+#link
+========================================================================== */
+$o-link: '.o-link';
+
+#{$o-link} {
+    color: $colors-blue-1;
+    font-weight: 500;
+    font-size: $fontSize-7;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

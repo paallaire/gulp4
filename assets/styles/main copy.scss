@@ -1,0 +1,121 @@
+/* ==========================================================================
+01.Settings
+========================================================================== */
+@import "01.settings/_tailwind-theme-variables";
+@import "01.settings/variables-custom";
+
+/* ==========================================================================
+02.Tools
+========================================================================== */
+
+// vendors
+// @import '~include-media/dist/_include-media';
+// @import '~include-media-export';
+// // @import '~aos/src/sass/aos';
+// // @import '~hamburgers/_sass/hamburgers/hamburgers';
+
+// functions
+@import "02.tools/functions";
+
+// mixins
+@import "02.tools/mixins/center";
+@import "02.tools/mixins/input-placeholder";
+@import "02.tools/mixins/last-row";
+@import "02.tools/mixins/responsive";
+@import "02.tools/mixins/text-truncate";
+
+// placeholder
+@import "02.tools/placeholder/container";
+@import "02.tools/placeholder/form";
+
+/* ==========================================================================
+03.Generic
+========================================================================== */
+@import "03.generic/normalize-preflight";
+@import "03.generic/tags";
+@import "03.generic/fonts";
+@import "03.generic/form";
+@import "03.generic/dev";
+
+/* ==========================================================================
+04.elements
+========================================================================== */
+@import "04.elements/base";
+
+/* ==========================================================================
+05.objets
+========================================================================== */
+@import "05.objets/intrinsic";
+@import "05.objets/grid";
+@import "05.objets/lazy";
+@import "05.objets/button";
+@import "05.objets/container";
+@import "05.objets/heading";
+@import "05.objets/link";
+@import "05.objets/list";
+@import "05.objets/release";
+@import "05.objets/table";
+@import "05.objets/text";
+@import "05.objets/wysiwyg";
+
+// loading
+@import "05.objets/loading/circle";
+@import "05.objets/loading/line";
+
+// form
+@import "05.objets/form/input-label";
+@import "05.objets/form/input-text";
+@import "05.objets/form/textarea";
+@import "05.objets/form/select";
+@import "05.objets/form/radio";
+@import "05.objets/form/checkbox";
+@import "05.objets/form/toggle";
+@import "05.objets/form/input-note";
+@import "05.objets/form/from-control";
+
+/* ==========================================================================
+06.components
+========================================================================== */
+@tailwind components;
+
+/* ==========================================================================
+07.utilities (tailwidnd.scss)
+========================================================================== */
+
+/* ==========================================================================
+08.pages
+========================================================================== */
+// @import 'pages/home';
+// @import 'pages/404';
+
+// .sg-block-color {
+//     padding-top: 100%;
+//     border: 2px solid white;
+//     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+// }
+
+// .sticky-nav--is-fixed {
+//     width: 100%;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: $zIndex-nav-sticky;
+// }
+
+// .sticky-element--is-fixed {
+//     width: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: $zIndex-nav-sticky;
+// }
+
+// body {
+//     background: red !important;
+// }
+
+.o-grid-container-demo {
+  .o-grid-column {
+    background: yellow;
+  }
+}

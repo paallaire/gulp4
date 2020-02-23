@@ -1,0 +1,58 @@
+$o-radio: '.o-radio';
+
+#{$o-radio} {
+
+    &__input {
+        display: none;
+
+        &:checked + label:after {
+            opacity: 1;
+        }
+    
+        &:disabled + label {
+            opacity: 0.5;
+    
+            & {
+                cursor: default;
+            }
+        }
+
+    }
+
+    label {
+        padding-left: 30px;
+        display: block;
+        min-height: $form-radio-size-icon;
+        position: relative;
+        font-weight: normal;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            width: $form-radio-size-icon;
+            height: $form-radio-size-icon;
+            position: absolute;
+            top: 0;
+            left: 0;
+            vertical-align: middle;
+            border: 1px solid $colors-blue-1;
+            border-radius: 50%;
+        
+        }
+
+        &:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: $colors-blue-1;
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 100ms ease;
+        }
+
+    }
+
+}

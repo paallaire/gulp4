@@ -1,0 +1,17 @@
+$o-from-control: '.o-from-control';
+
+#{$o-from-control} {
+
+    .o-input-label {
+        margin-bottom: 10px;
+    }
+
+    .o-input-note {
+        margin-top: 10px;
+    }
+
+    &.has-error {
+        @extend %control-error; 
+    }
+
+}

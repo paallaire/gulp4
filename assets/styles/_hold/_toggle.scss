@@ -1,0 +1,18 @@
+$c-toggle: '.c-toggle';
+
+#{$c-toggle} {
+
+    &__header {
+        padding: 10px;
+        display: block;
+        border: 1px solid black;
+    }
+
+    &__content {
+        height: 0;
+        overflow: hidden;
+        transition: height 250ms ease;
+    }
+
+}
+

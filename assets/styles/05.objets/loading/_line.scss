@@ -1,0 +1,36 @@
+/* ==========================================================================
+#loading-line
+========================================================================== */
+$o-loading-line: '.o-loading-line';
+
+#{$o-loading-line} {
+    display: block;
+    position: relative;
+    height: 4px;
+    width: 200px;
+    background-color: rgba($colors-green-1, 0.3);
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        background-color: rgba($colors-green-1, 1);
+        animation-name: loading-line;
+        animation-duration: 1500ms;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes loading-line {
+    from {
+        transform: translate3d(-200%, 0, 0);
+    }
+
+    to {
+        transform: translate3d(200%, 0, 0);
+    }
+}

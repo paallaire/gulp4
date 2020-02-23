@@ -1,0 +1,52 @@
+$o-checkbox: '.o-checkbox';
+
+#{$o-checkbox} {
+
+    &__input {
+        display: none;
+
+        &:checked + label:after {
+            opacity: 1;
+        }
+    
+        &:disabled + label {
+            cursor: default;
+            opacity: 0.5;
+        }
+
+    }
+
+    label {
+        padding-left: 30px;
+        display: block;
+        min-height: $form-checkbox-size-icon;
+        position: relative;
+        font-weight: normal;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            width: $form-checkbox-size-icon;
+            height: $form-checkbox-size-icon;
+            position: absolute;
+            top: 0;
+            left: 0;
+            vertical-align: middle;
+            border: 1px solid $colors-blue-1;
+        }
+
+        &:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: $colors-blue-1;
+            opacity: 0;
+            transition: opacity 100ms ease;
+        }
+
+    }
+
+}

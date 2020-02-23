@@ -1,0 +1,18 @@
+$o-input-textarea: '.o-input-textarea';
+
+#{$o-input-textarea} {
+    @extend %input-textarea;
+    @extend %input-placeholder;
+
+    &--is-disabled,
+    &:disabled {
+        @extend %input-disabled;
+    }
+
+    &--is-focus,
+    &:focus {
+        @extend %input-focus;
+    }
+
+}
+

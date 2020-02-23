@@ -1,0 +1,83 @@
+/* ==========================================================================
+    #input
+==========================================================================  */
+
+%input-text {
+    padding: $form-input-padding;
+    display: block;
+    width: 100%;
+    font-weight: $fontWeight-medium;
+    font-size: $fontSize-10;
+    line-height: $lineHeight-tight;
+    border: 1px solid $colors-black;
+}
+
+%input-textarea {
+    @extend %input-text;
+    resize: none;
+}
+
+%input-select {
+    display: block;
+    width: 100%;
+    font-weight: $fontWeight-medium;
+    font-size: $fontSize-10;
+    line-height: $lineHeight-tight;
+}
+
+/* ==========================================================================
+    #input state
+==========================================================================  */
+
+%input-disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+%input-focus {
+    color: $colors-blue-1;
+    border: 1px solid currentColor;
+}
+
+%input-placeholder {
+
+    @include input-placeholder {
+        color: $colors-blue-1;
+    }
+    
+}
+
+/* ==========================================================================
+    #control state
+==========================================================================  */
+
+%control-error {
+
+    .o-input-note, 
+    .o-input-label, 
+    input,
+    select,
+    textarea {
+        color: $colors-red-1;
+    }
+
+    input,
+    select,
+    textarea {
+        border-color: currentColor;  
+    }
+
+}
+
+/* ==========================================================================
+    #autocomplete
+    https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/
+==========================================================================  */
+
+%autocomplete-style {
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover, 
+    &:-webkit-autofill:focus {}
+
+}

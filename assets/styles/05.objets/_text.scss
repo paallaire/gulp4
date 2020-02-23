@@ -1,0 +1,49 @@
+/* ==========================================================================
+#text
+========================================================================== */
+$o-text: '.o-text';
+
+// placeholder
+%text-base {
+    $vertical-rythm: $lineHeight-relaxed;
+
+    color: $colors-gray-1;
+    font-weight: 500;
+    line-height: $lineHeight-snug;
+
+    /* spacing */
+
+    > * + * {
+        margin-top: 0.5em * $vertical-rythm;
+    }
+
+    > *:first-child {
+        margin-top: 0;
+    }
+
+    /* link */
+
+    a {
+        text-decoration: underline;
+
+        &:hover {
+            border-bottom: 1px solid;
+        }
+    }
+}
+
+// class
+#{$o-text} {
+    @extend %text-base;
+    font-size: $fontSize-8;
+}
+
+#{$o-text}-small {
+    @extend %text-base;
+    font-size: $fontSize-6;
+}
+
+#{$o-text}-large {
+    @extend %text-base;
+    font-size: $fontSize-10;
+}

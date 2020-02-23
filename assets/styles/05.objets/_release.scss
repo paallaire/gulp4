@@ -1,0 +1,10 @@
+/* ==========================================================================
+#release (Full-width element in fixed-width container example)
+https://codepen.io/paallaire/pen/mdymvvW
+========================================================================== */
+$o-release: '.o-release';
+
+#{$o-release} {
+    margin-right: calc(-50vw + 50%);
+    margin-left: calc(-50vw + 50%);
+}

@@ -1,0 +1,27 @@
+/* ==========================================================================
+    #INPUT-PLACEHOLDER
+
+    input,  
+    textarea {  
+        @include input-placeholder{
+            color: $grey;
+        }
+    }
+========================================================================== */
+
+@mixin input-placeholder {
+
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        @content;
+        opacity: 1; /* Firefox */
+    }
+    
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        @content;
+    }
+    
+    &::-ms-input-placeholder { /* Microsoft Edge */
+        @content;
+    }
+
+}

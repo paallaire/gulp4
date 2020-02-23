@@ -1,0 +1,45 @@
+/* ==========================================================================
+#buttons
+========================================================================== */
+$o-button: '.o-button';
+
+// placeholder
+
+%button {
+    padding: 12px 30px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: $lineHeight-tight;
+    text-transform: uppercase;
+    transition: background-color 200ms ease;
+}
+
+// class
+
+#{$o-button} {
+    @extend %button;
+    color: $colors-white;
+    background-color: $colors-black;
+    border: 1px solid $colors-black;
+
+    &.is-hover,
+    &:hover {
+        color: $colors-black;
+        background-color: $colors-white;
+    }
+
+    &.is-disabled,
+    &:disabled {
+        color: $colors-gray-1;
+        background-color: $colors-gray-2;
+        cursor: not-allowed;
+    }
+
+    &.is-focus,
+    &:focus {
+        color: $colors-white;
+        background-color: $colors-blue-1;
+        border-color: $colors-blue-1;
+    }
+}
